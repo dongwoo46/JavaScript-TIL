@@ -1,8 +1,8 @@
-import express from 'express';
-import { Server } from 'socket.io';
+import http from 'http'; // 이미 기본 설치되어있음
+import WebSocket from 'ws'; // 기본설치!
+import express from 'express'; // npm i express 설치
 import { instrument } from '@socket.io/admin-ui';
-import http from 'http';
-// import WebSocket from "ws";
+import { Server } from 'socket.io';
 
 const app = express();
 

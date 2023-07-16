@@ -10,7 +10,9 @@ html(lang="en")
             h1 Noom
         main
             //- video 자동재생 , playsinline은 비디오 전체화면 방지 다만 웹사이트에서만 실행가능
-            video#myFace(autoplay,playsinline, width="400", heigh="400")
-            
+            video#myFace(autoplay,playsinline, width="400", height="400")
+            button#mute Mute 
+            button#camera Turn Camera Off
+            select#cameras
         script(src="/socket.io/socket.io.js")
         script(src="public/js/app.js")
